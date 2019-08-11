@@ -1,0 +1,16 @@
+pipeline {
+    agent { label 'sri' }
+    stages {
+        stage ("srikanth"){
+            steps {
+                git 'https://github.com/27kanth/jenkins-decerative'
+            }
+        }
+        stage ("Java execute"){
+            steps {
+                sh 'ls -l'
+                touch test.result
+            }
+        }
+    }
+}
