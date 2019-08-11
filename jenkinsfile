@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+    agent { label 'sri' }
     stages {
-        stage ("SCM Chkout-1"){
+        stage ("srikanth"){
             steps {
-                git 'https://github.com/Vishwanathms/Java-Proj1'
+                git 'https://github.com/27kanth/jenkins-decerative'
             }
         }
         stage ("Java execute"){
